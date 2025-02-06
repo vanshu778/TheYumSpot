@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn{
+    display: inline;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-width: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.btn-primary{
+    color: rgb(255,255,255);
+    background-color: #000000;
+    border-width: 3px;
+    border: #000;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover{
+    background-color: #7d7c7c;
+    color: rgb(255, 255, 255);
+    border-width: 12px;
+    border-color: black;
+    font-weight: 500;
+}
+
+/*---------Navbar Styling----------*/
+.section-navbar{
+    box-shadow: 0px 5px 10px 0px rgb(151, 150, 150);
+    position: fixed;
+    width: 100%;
+    background: #80bc08;
+    color: #000;
+    opacity: 0.95;
+    z-index: 999;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.navbar{
+    order: 2;
+    display:flex;
+}
+
+.navbar li{
+    list-style: none;
+    margin-left: 2rem;
+    font-size: 1.50rem;
+}
+
+.logo{
+    order: 1;
+    font-size: 2rem;
+}
+
+.navbar a{
+    color:  rgb(41, 40, 40);
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.navbar a:hover{
+    color: #ffffff;
+}
+/*---------- home page styling ------------*/
+.section-home-area{
+    height: 50vh;
+    background: url("./img/home-img1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat\;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.hero-para{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hero-para-pre{
+    font-weight: 100;
+    text-align: center;
+}
+
+/*------------ About us --------------*/
+#section-home-about{
+    padding: 50px 0px;
+    background: #f0f3f0;
+}
+
+.home-about{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section-home-about h2{
+    font-size: 3rem;
+}
+
+#section-home-about p{
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.about-img{
+    flex: 1 1 400px;
+    padding: 15px;
+    transform: translate(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation{
+    100%{
+        transform:translate(0);
+    }
+}
+
+.about-img img{
+    display: block;
+    height:310px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translateX(-150%);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation{
+    100%{
+        transform:translate(0);
+    }
+}
