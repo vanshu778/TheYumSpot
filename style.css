@@ -174,3 +174,140 @@ body{
         transform:translate(0);
     }
 }
+
+/*--------menu-------*/
+#section-menu{
+    background: #ebebe9;
+}
+
+.food-menu-heading{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+    color: #666;
+}
+
+.food-menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img{
+    display: block;
+    width: 250px;
+    border-radius: 8%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.food-menu-item{
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.food-description{
+    margin:auto 1rem;
+}
+
+.food-description a{
+    font-size: 1.2rem;
+    padding: 1em 2em;
+}
+
+.food-title{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444;
+}
+
+.food-description .food-price{
+    color: rgb(3, 149, 193);
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+/*--------Contact Us ---------*/
+#contact{
+    padding: 13rem 0rem;
+    background: rgb(226,226,226);
+}
+
+.contact-container{
+    display: flex;
+    background: #fff;
+}
+
+.contact-img{
+    width: 50%;
+}
+
+.contact-img img{
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.form-container{
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+.form-container input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 0.5rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-container textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 50px;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-container h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.form-container a{
+    font-size: 1rem;
+}
+
+#submit{
+    padding-top: 5px;
+}
+
+#footer h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(65,65,65);
+}
